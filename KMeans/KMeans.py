@@ -9,7 +9,7 @@ bc = load_breast_cancer()
 x = scale(bc.data)
 y = bc.target
 
-# Separate train a test data
+# Separate train data and test data
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)
 
 model = KMeans(n_clusters=5, random_state=0)

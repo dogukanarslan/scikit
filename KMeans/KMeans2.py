@@ -13,7 +13,6 @@ plt.show()
 km = KMeans(n_clusters=3, init='random', n_init=10,
             max_iter=300, tol=1e-04, random_state=0)
 
-
 # Predict each points label among 0, 1 and 2
 y_km = km.fit_predict(X)
 
